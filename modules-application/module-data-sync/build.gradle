@@ -1,0 +1,9 @@
+dependencies {
+    implementation project(":module-core")
+    implementation project(":modules-external:module-mysql")
+    implementation project(":modules-external:module-open-api-climate")
+}
+
+test {
+    useJUnitPlatform()
+}

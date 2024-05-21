@@ -1,0 +1,8 @@
+dependencies {
+    implementation project(":module-core")
+    implementation project(":modules-external:module-mysql")
+}
+
+test {
+    useJUnitPlatform()
+}
