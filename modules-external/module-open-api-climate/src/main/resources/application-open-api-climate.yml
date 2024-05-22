@@ -1,0 +1,9 @@
+open-api:
+  climate:
+    uri: http://apis.data.go.kr/1360000/VilageFcstInfoService_2.0/getVilageFcst
+    serviceKey: XbCRVevaD3wnJ67DYgv23ezZuS4zRVryXo1ZbnTk58ApRMC%2FOWD3yMx3Wzdp%2FOlsx4m7Ry%2FumAHSeNDQIVDh1g%3D%3D
+    page: 1
+    numOfRows: 1000
+    dataType: JSON
+    coordinateX: 62
+    coordinateY: 130
