@@ -1,10 +1,10 @@
 package org.example.bigs.pretest.openapi.model;
 
 public record Item(
-        String baseDate,
-        String baseTime,
-        String fcstDate,
-        String fcstTime,
+        int baseDate,
+        int baseTime,
+        int fcstDate,
+        int fcstTime,
         String category,
         String fcstValue,
         String nx,
