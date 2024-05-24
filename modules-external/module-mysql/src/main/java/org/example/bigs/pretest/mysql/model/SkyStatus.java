@@ -14,4 +14,13 @@ public enum SkyStatus {
 
     private final int value;
 
+    public static SkyStatus fromCode(int value) {
+        return switch (value) {
+            case 1 -> SUNNY;
+            case 3 -> CLOUDY;
+            case 4 -> OVERCAST;
+            default -> throw new IllegalStateException("Unexpected value: " + value);
+        };
+    }
+
 }

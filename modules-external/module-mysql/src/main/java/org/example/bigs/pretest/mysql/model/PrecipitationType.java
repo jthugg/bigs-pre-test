@@ -15,5 +15,16 @@ public enum PrecipitationType {
     ;
 
     private final int value;
+    
+    public static PrecipitationType fromOrdinal(int ordinal) {
+        return switch (ordinal) {
+            case 0 -> NO;
+            case 1 -> RAIN;
+            case 2 -> RAIN_SNOW;
+            case 3 -> SNOW;
+            case 4 -> SHOWER;
+            default -> throw new IllegalStateException("Unexpected value: " + ordinal);
+        };
+    }
 
 }

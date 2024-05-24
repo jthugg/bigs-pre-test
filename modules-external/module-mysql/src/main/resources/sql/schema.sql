@@ -1,12 +1,12 @@
 -- define schema here
 
 CREATE TABLE ForeCast (
-    id BIGINT PRIMARY KEY,
+    id BIGINT PRIMARY KEY AUTO_INCREMENT,
     precipitationProbability TINYINT,
     precipitationType VARCHAR(255),
-    amountOfPrecipitation FLOAT,
+    amountOfPrecipitation VARCHAR(255),
     humidity TINYINT,
-    amountOfSnow FLOAT,
+    amountOfSnow VARCHAR(255),
     skyStatus VARCHAR(255),
     temperature FLOAT,
     maxTemperatureOfDay FLOAT,

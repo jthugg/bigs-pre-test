@@ -5,7 +5,7 @@ dependencies {
     runtimeOnly 'com.mysql:mysql-connector-j'
 
     // Spring Data Jpa
-    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    api 'org.springframework.boot:spring-boot-starter-data-jpa'
 
     // Test Container
     testImplementation "org.testcontainers:testcontainers"
