@@ -34,9 +34,9 @@ public class ForeCast {
     @Enumerated(EnumType.STRING)
     @Column(columnDefinition = "VARCHAR(255)")
     private SkyStatus skyStatus;
-    private short temperature;
-    private short maxTemperatureOfDay;
-    private short minTemperatureOfDay;
+    private Float temperature;
+    private Float maxTemperatureOfDay;
+    private Float minTemperatureOfDay;
     private float horizontalWindSpeed;
     private float verticalWindSpeed;
     private float waveHeight;
