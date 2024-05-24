@@ -2,6 +2,9 @@ dependencies {
     implementation project(":module-core")
     implementation project(":modules-external:module-mysql")
     implementation project(":modules-external:module-open-api-climate")
+    implementation 'org.springframework.boot:spring-boot-starter-aop'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.boot:spring-boot-starter-validation'
 }
 
 test {

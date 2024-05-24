@@ -1,0 +1,11 @@
+spring:
+
+  profiles:
+    default: local
+    group:
+      test:
+        - mysql-test
+        - open-api-climate
+      local:
+        - mysql-local
+        - open-api-climate
