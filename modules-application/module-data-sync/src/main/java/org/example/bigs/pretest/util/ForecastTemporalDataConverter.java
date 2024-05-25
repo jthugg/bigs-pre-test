@@ -7,18 +7,17 @@ import java.time.ZonedDateTime;
 public class ForecastTemporalDataConverter {
 
     public static Instant now() {
-        ZonedDateTime now = ZonedDateTime.now(ZoneId.of("Asia/Seoul")).minusMinutes(10);
+        ZonedDateTime now = ZonedDateTime.now(ZoneId.of("Asia/Seoul"));
         ZonedDateTime time = ZonedDateTime.of(
                 now.getYear(),
                 now.getMonthValue(),
                 now.getDayOfMonth(),
-                3 * (now.getHour() / 3) - 1,
+                Math.max(0, 3 * (now.getHour() / 3) - 1),
                 0,
                 0,
                 0,
                 ZoneId.of("Asia/Seoul")
         );
-        System.out.println(time);
         return time.toInstant();
     }
 
