@@ -1,0 +1,9 @@
+spring:
+
+  profiles:
+    default: local
+    group:
+      test:
+        - mysql-test
+      local:
+        - mysql-local
